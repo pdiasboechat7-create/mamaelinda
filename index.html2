@@ -1,0 +1,11 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mamãe, eu te amo ❤️</title><style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow:hidden;display:grid;place-items:center;text-align:center;font-family:Arial,sans-serif;color:#fff;background:linear-gradient(135deg,#ffb6c1,#ff6f9f,#b76cff)}
+.card{z-index:2;width:min(680px,90%);padding:42px 25px;border:1px solid #ffffff66;border-radius:28px;background:#ffffff24;backdrop-filter:blur(14px);box-shadow:0 25px 70px #60003044;animation:in 1s ease}
+h1{font-size:clamp(38px,8vw,72px);margin:0;text-shadow:0 0 25px #ffffff66}p{font-size:clamp(17px,3vw,22px);line-height:1.6}
+button{border:0;border-radius:30px;padding:14px 24px;font-size:17px;font-weight:bold;background:#fff;color:#e83e78;cursor:pointer;transition:.25s}button:hover{transform:scale(1.06) translateY(-3px)}
+#msg{font-size:20px;font-weight:bold;min-height:30px;margin-top:20px}.heart{position:fixed;bottom:-50px;animation:up linear forwards;pointer-events:none}
+@keyframes up{to{transform:translateY(-120vh) rotate(360deg);opacity:0}}@keyframes in{from{opacity:0;transform:translateY(30px) scale(.94)}to{opacity:1;transform:none}}
+</style></head><body><div class="card"><h1>❤️ Mamãe, eu te amo! ❤️</h1><p>Obrigado por todo o carinho, por cuidar de mim e por estar sempre ao meu lado. Você é uma pessoa muito especial e merece todo o amor do mundo.</p><button onclick="amor()">Clique aqui, mãe 💖</button><div id="msg"></div><small>Feito com muito amor 💕</small></div><script>
+function h(){let e=document.createElement("div");e.className="heart";e.textContent=["❤️","💖","💕","💗","🌸"][Math.floor(Math.random()*5)];e.style.left=Math.random()*100+"vw";e.style.fontSize=18+Math.random()*30+"px";e.style.animationDuration=4+Math.random()*5+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),9000)}setInterval(h,350);
+function amor(){document.getElementById("msg").textContent="Você é a melhor mãe do mundo! Eu te amo infinitamente! 💖🌹";for(let i=0;i<25;i++)setTimeout(h,i*60)}
+</script></body></html>
